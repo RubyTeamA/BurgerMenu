@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cat Burger</title>
+    <title>CatBurger</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="icon" type="image/x-icon" href="https://media0.giphy.com/media/tITrMyC7dvgssM02b2/source.gif">
@@ -9,7 +9,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="welcome if action_name == 'welcome'">
     <%= render "lists/navbar" %>
     <div class= "container">
     <%= render "ingredients/flash" %>

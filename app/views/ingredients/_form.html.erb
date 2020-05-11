@@ -11,10 +11,13 @@
     </div>
   <% end %>
 
+
+
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <%= form.label :name %>
+  <%= form.select :name,  ["Beef Patty","Grilled Chicken", "Fried Chicken", "Lettuce", "Tomatoes", "Pickles", "Ham","Turkey"] %>
   </div>
+
 
   <div class="field">
     <%= form.label :quantity %>

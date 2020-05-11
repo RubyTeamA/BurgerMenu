@@ -2,12 +2,13 @@
 
 <h1>Sandwich</h1>
 
-<table class ="table" >
+<table class ="table table-hover" >
   <thead>
     <tr>
       <th>Name</th>
       <th>Quantity</th>
       <th>Contains</th>
+      <th>Cost</th>
       <th colspan="4"></th>
     </tr>
   </thead>
@@ -19,9 +20,10 @@
           <td><%= ingredient.name %></td>
           <td><%= ingredient.quantity %></td>
           <td><%= ingredient.completed %></td>
+          <td><%= '$1.00' %></td>
           <td><%= link_to 'Show', ingredient, class: 'btn btn-outline-primary' %></td>
           <td><%= link_to 'Edit', edit_ingredient_path(ingredient), class: 'btn btn-outline-secondary'%></td>
-          <td><%= link_to 'Delete', ingredient,class: 'btn btn-outline-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Delete',  ingredient, class: 'btn btn-outline-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
 
     <% end %>
