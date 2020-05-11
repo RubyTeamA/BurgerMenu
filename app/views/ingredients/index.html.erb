@@ -1,9 +1,12 @@
 
 
-<h1>Sandwich</h1>
+<blockquote class="blockquote text-right">
+<p class="lead">"The Best Burgers in the World"</p>
+<footer class="blockquote-footer">Alexander Wong<cite title="Source Title"></cite></footer>
+</blockquote>
 
 <table class ="table table-hover" >
-  <thead>
+  <thead class = "thead-dark">
     <tr>
       <th>Name</th>
       <th>Quantity</th>
@@ -33,4 +36,4 @@
 <br>
 
 <%= link_to 'New Ingredient', new_ingredient_path, class: 'btn btn-info' %>
-<%= link_to 'CheckOut', new_ingredient_path, class: 'btn btn-success' %>
+<a href="ingredients/checkout" class = 'btn btn-success'>Checkout</a>
