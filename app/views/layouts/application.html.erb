@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SandwichApp</title>
+    <title>Cat Burger</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="icon" type="image/x-icon" href="https://media0.giphy.com/media/tITrMyC7dvgssM02b2/source.gif">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render "lists/navbar" %>
+    <div class= "container">
+    <%= render "ingredients/flash" %>
     <%= yield %>
+    </div>
   </body>
 </html>
