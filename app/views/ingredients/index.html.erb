@@ -2,9 +2,10 @@
 
 <blockquote class="blockquote text-right">
 <p class="lead">"The Best Burgers in the World"</p>
-<footer class="blockquote-footer">Alexander Wong<cite title="Source Title"></cite></footer>
+<footer class="blockquote-footer">Alexander Wong</footer>
+<%= image_tag("https://media0.giphy.com/media/i4bWPx9KZWeMph3ZLv/source.gif", :size => "100x100") %>
 </blockquote>
-
+<h2>Burger</h2>
 <table class ="table table-hover" >
   <thead class = "thead-dark">
     <tr>
@@ -23,7 +24,7 @@
           <td><%= ingredient.name %></td>
           <td><%= ingredient.quantity %></td>
           <td><%= ingredient.completed %></td>
-          <td><%= '$1.00' %></td>
+          <td><%= '$1.00' %> </td>
           <td><%= link_to 'Show', ingredient, class: 'btn btn-outline-primary' %></td>
           <td><%= link_to 'Edit', edit_ingredient_path(ingredient), class: 'btn btn-outline-secondary'%></td>
           <td><%= link_to 'Delete',  ingredient, class: 'btn btn-outline-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -36,4 +37,6 @@
 <br>
 
 <%= link_to 'New Ingredient', new_ingredient_path, class: 'btn btn-info' %>
-<a href="ingredients/checkout" class = 'btn btn-success'>Checkout</a>
+<a href="ingredients" class = 'btn btn-success'>Checkout</a>
+
+<blockquote class="blockquote text-right"><%= image_tag("https://thumbs.gfycat.com/FatherlyPointedAracari-max-1mb.gif", :size => "100x100") %></blockquote>
