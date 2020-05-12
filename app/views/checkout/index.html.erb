@@ -1,7 +1,7 @@
 <h1>Price</h1>
 
-<table class ="table table-sm table-dark" >
-  <thead class = "thead-dark">
+<table class ="table table-sm table-light" >
+  <thead class = "thead-light">
     <tr>
       <th>Name</th>
       <th>Quantity</th>
@@ -21,7 +21,7 @@
           <td><%= '$1.00' %> </td>
         </tr>
     <% end %>
-        <tr>
+        <tr class="table-warning">
         <td></td>
         <td></td>
         <td><strong>Total Cost: </strong></td>
@@ -31,3 +31,4 @@
 </table>
 
 <%= link_to 'Back', ingredients_path, class: 'btn btn-danger' %>
+<a href='thank' class = 'btn btn-success'>Pay</a>
