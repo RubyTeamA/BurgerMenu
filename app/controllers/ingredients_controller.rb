@@ -12,6 +12,7 @@ class IngredientsController < ApplicationController
   def show
   end
 
+
   # GET /ingredients/new
   def new
     @ingredient = Ingredient.new
@@ -59,6 +60,10 @@ class IngredientsController < ApplicationController
       format.html { redirect_to root_url, notice: 'Ingredient was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+  
+  def checkout
+    @ingredients = Ingredient.all
   end
 
   private

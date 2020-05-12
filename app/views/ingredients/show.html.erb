@@ -15,5 +15,7 @@
   <%= @ingredient.completed %>
 </p>
 
-<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
-<%= link_to 'Back', ingredients_path %>
+<%= link_to 'Edit', edit_ingredient_path(@ingredient), class: 'btn btn-warning'%> |
+<%= link_to 'Back', ingredients_path , class: 'btn btn-info'%>
+
+<blockquote class="blockquote text-center"><%= image_tag("https://classroomclipart.com/images/gallery/Animations/Food/animated-clipart-gif-building-cheese-burger-animation-05c.gif", :size => "450x450") %></blockquote>
