@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 2020_05_08_222420) do
 
   create_table "ingredients", force: :cascade do |t|
-    t.string "name"
-    t.integer "quantity"
-    t.boolean "completed"
+    t.string "name", default: "Beef Patty"
+    t.integer "quantity", default: 1
+    t.boolean "completed", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

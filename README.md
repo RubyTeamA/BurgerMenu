@@ -1,25 +1,5 @@
-# README
+CatBurger
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails website that will allow you to order a burger with any ingredient of your choice.
+You can add, edit, or delete any ingredient to have a burger to your right satisfaction.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# ToDoList
